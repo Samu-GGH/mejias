@@ -8,6 +8,7 @@
 .swiper-button-next::after {
   position: absolute;
   right: 16px;
+  color: rgba(180, 22, 22, 0.75);
 }
 
 .swiper-button-prev::after {
