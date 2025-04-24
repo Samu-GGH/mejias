@@ -35,7 +35,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="relative flex justify-evenly lg:justify-between h-20 p-2 flex-wrap place-items-center BGCcomponent text-white select-none">
+    <header className="relative flex justify-evenly lg:justify-between h-20 md:h-22 lg:h-15 p-2 flex-wrap place-items-center BGCcomponent text-white select-none">
       <button
         onClick={toggleNavBar}
         className="button-navbar absolute left-6 md:hidden"
@@ -55,7 +55,7 @@ const Header = () => {
           />
         </svg>
       </button>
-      <div className="text-4xl font-bold lg:ml-20">
+      <div className="text-4xl font-bold md:mb-3 lg:ml-20">
         <Link href="/">Mejias</Link>
       </div>
 
