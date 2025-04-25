@@ -3,3 +3,15 @@
 .BGCcomponent {
   background-color: #f11515;
 }
+
+svg {
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  stroke: rgba(255, 255, 255, 0.6);
+  stroke-width: 1;
+}
+
+svg:hover {
+  color: rgb(255, 255, 255);
+  stroke: rgb(255, 255, 255);
+}
