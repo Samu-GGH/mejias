@@ -12,7 +12,7 @@ import Image from "next/image";
 const Carrousel = () => {
   return (
     <Swiper
-      speed={1000}
+      speed={500}
       modules={[Navigation, Pagination, Autoplay]}
       autoplay={{
         delay: 5000,
