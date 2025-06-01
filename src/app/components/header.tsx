@@ -130,7 +130,7 @@ const Header = () => {
               </svg>
             </button>
             <ul
-              className={`absolute left-[100%] -top-3.5 md:top-[110%] lg:top-10.5 md:left-0 mt-2 bg-red-950 md:bg-red-500 w-30 md:w-full lg:w-30 shadow-lg transition-opacity duration-200 ${
+              className={`absolute left-[100%] -top-3.5 md:top-[90%] lg:top-7 md:left-0 mt-2 bg-red-950 md:bg-red-500 w-30 md:w-full lg:w-30 shadow-lg transition-opacity duration-200 ${
                 isSubmenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
               }`}
             >

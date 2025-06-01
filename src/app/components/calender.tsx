@@ -1,71 +1,92 @@
 "use client";
+// core version + navigation, pagination modules:
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+// import Swiper and modules styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "../ui/swipperStyles.css";
 
 const Calender = () => {
   return (
-    <div className="w-full h-16 relative flex justify-center mt-3">
-      <div className="relative flex items-center w-[90%] h-16 p-1 inset-shadow-sm inset-shadow-gray-300 overflow-x-scroll">
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+    <Swiper
+      speed={500}
+      modules={[Navigation]}
+      spaceBetween={0}
+      breakpoints={{
+        320: { slidesPerView: 3 },
+        768: { slidesPerView: 4 },
+        1024: { slidesPerView: 4 },
+      }}
+      navigation
+      loop={false}
+      className="w-[90%] h-20 md:h-24 lg:h-36 relative cursor-pointer p-1 mt-3 inset-shadow-sm inset-shadow-gray-300"
+    >
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-        <div className="event-container relative flex h-14 w-25 ml-2 mr-2 bg-gray-100 rounded-sm flex-nowrap">
-          <div className="relative flex justify-center h-full w-5 BGCcomponent items-center">
-            <span className="text-white text-[8px] text-center w-full">
-              Oct 22
-            </span>
-          </div>
-          <span className="relative text-black text-[8px] text-justify w-19 h-full m-1">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
           </span>
         </div>
-      </div>
-    </div>
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
+          </span>
+        </div>
+      </SwiperSlide>
+      <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
+        <div className="relative flex justify-center h-full BGCcomponent items-center scale-97 focus:scale-100 hover:scale-100 transition-transform duration-150">
+          <div className="w-[1px] bg-white h-full"></div>
+          <span className="text-white text-[8px] md:text-[12px] lg:text-[16px] text-center w-full">
+            Oct 22
+          </span>
+        </div>
+      </SwiperSlide>
+    </Swiper>
   );
 };
 

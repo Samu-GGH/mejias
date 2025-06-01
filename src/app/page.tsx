@@ -10,6 +10,9 @@ const home = () => {
       <Header />
       <div className="h-lvh">
         <Carrousel />
+        <div className="relative block mt-3 pl-4 pr-4 md:pl-12 md:pr-12 lg:pl-16 lg:pr-16 text-[16px] font-bold">
+          Calendario
+        </div>
         <Calender />
       </div>
       <Footer />
