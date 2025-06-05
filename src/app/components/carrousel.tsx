@@ -23,7 +23,7 @@ const Carrousel = () => {
       spaceBetween={0}
       slidesPerView={1}
       loop={true}
-      className="relative w-full md:w-[90%] h-[50vh] flex justify-center md:mt-1 md:rounded-xl select-none"
+      className="relative w-full md:w-[90%] h-[70vh] flex justify-center md:mt-1 md:rounded-xl select-none"
     >
       <SwiperSlide>
         <Image
@@ -31,7 +31,6 @@ const Carrousel = () => {
           width={0}
           height={0}
           alt={""}
-          layout="responsive/>"
           className="w-full h-full object-cover"
         />
       </SwiperSlide>
@@ -41,7 +40,6 @@ const Carrousel = () => {
           width={0}
           height={0}
           alt={""}
-          layout="responsive/>"
           className="w-full h-full object-cover"
         />
       </SwiperSlide>
@@ -51,7 +49,6 @@ const Carrousel = () => {
           width={0}
           height={0}
           alt={""}
-          layout="responsive/>"
           className="w-full h-full object-cover"
         />
       </SwiperSlide>
@@ -61,7 +58,6 @@ const Carrousel = () => {
           width={0}
           height={0}
           alt={""}
-          layout="responsive/>"
           className="w-full h-full object-cover"
         />
       </SwiperSlide>
