@@ -20,7 +20,7 @@ const Calender = () => {
         1024: { slidesPerView: 4, navigation: { enabled: true } },
       }}
       loop={false}
-      className="w-[90%] h-20 md:h-24 lg:h-36 relative cursor-pointer p-1 mt-3 inset-shadow-sm inset-shadow-gray-300"
+      className="w-[90%] h-20 md:h-24 lg:h-36 relative cursor-pointer p-1 mt-3 inset-shadow-sm inset-shadow-gray-300 z-100"
     >
       <SwiperSlide className="event-container relative flex items-center justify-center rounded-sm flex-nowrap">
         <div className="relative flex justify-center h-full BGCcomponent items-center scale-95 hover:scale-100 transition-transform duration-150">

@@ -23,7 +23,7 @@ const Carrousel = () => {
       spaceBetween={0}
       slidesPerView={1}
       loop={true}
-      className="relative w-full md:w-[90%] h-[70vh] flex justify-center md:mt-1 md:rounded-xl select-none"
+      className="relative w-full md:w-[90%] h-[70vh] flex justify-center md:mt-1 md:rounded-xl select-none z-100"
     >
       <SwiperSlide>
         <Image
