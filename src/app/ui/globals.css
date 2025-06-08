@@ -23,10 +23,17 @@ svg:hover {
   stroke-width: 1.5;
 }
 
-.masCalendario:hover > .chevron {
+.masCalendario:hover > .chevron,
+.masNoticias:hover > .chevron {
   color: rgb(255, 255, 255);
   stroke: rgb(255, 255, 255);
   transition: 150ms ease-out;
+}
+
+.noticiaSecundaria:hover > .imgSecundaria,
+.noticiaRelleno:hover > .imgRelleno {
+  transform: scale(102%);
+  transition: all 150ms ease-out;
 }
 
 @layer utilities {
