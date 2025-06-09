@@ -24,7 +24,8 @@ svg:hover {
 }
 
 .masCalendario:hover > .chevron,
-.masNoticias:hover > .chevron {
+.masNoticias:hover > .chevron,
+.masRankings:hover > .chevron {
   color: rgb(255, 255, 255);
   stroke: rgb(255, 255, 255);
   transition: 150ms ease-out;
