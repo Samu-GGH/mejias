@@ -60,7 +60,7 @@ const Header = () => {
       </div>
 
       <nav
-        className={`navbar absolute md:relative flex flex-col left-0 top-0 h-80 md:h-fit w-[50%] md:w-full lg:w-[40%] pt-10 md:pt-0 md:place-content-center z-100 bg-red-950 md:bg-transparent -translate-x-[101%] md:translate-0 transition-all duration-200 ease-in-out ${
+        className={`navbar absolute md:relative flex flex-col left-0 top-0 h-120 md:h-fit w-full lg:w-[40%] pt-10 md:pt-0 md:place-content-center z-100 bg-red-950 md:bg-transparent -translate-x-[101%] md:translate-0 transition-all duration-200 ease-in-out ${
           isNavOpen ? "translate-x-0" : "-translate-x-[101%]"
         }`}
       >

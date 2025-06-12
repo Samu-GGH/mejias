@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "../ui/swipperStyles.css";
 import Image from "next/image";
 
-const Carrousel = () => {
+export default function Carrousel() {
   return (
     <Swiper
       speed={500}
@@ -63,6 +63,4 @@ const Carrousel = () => {
       </SwiperSlide>
     </Swiper>
   );
-};
-
-export default Carrousel;
+}

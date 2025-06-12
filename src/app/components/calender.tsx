@@ -13,12 +13,12 @@ const Calender = () => {
       speed={500}
       modules={[Navigation]}
       spaceBetween={0}
-      navigation
       breakpoints={{
         320: { slidesPerView: 3, navigation: { enabled: false } },
         768: { slidesPerView: 4, navigation: { enabled: true } },
         1024: { slidesPerView: 4, navigation: { enabled: true } },
       }}
+      navigation
       loop={false}
       className="w-[90%] h-20 md:h-24 lg:h-36 relative cursor-pointer p-1 mt-3 inset-shadow-sm inset-shadow-gray-300 z-100"
     >

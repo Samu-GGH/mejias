@@ -1,12 +1,7 @@
-import Header from "../components/header";
-import Footer from "../components/footer";
-
 const calendario = () => {
   return (
     <main className="relative flex flex-col">
-      <Header />
-      <div className="h-lvh">calendario</div>
-      <Footer />
+      <div className="h-lvh">Calendario</div>
     </main>
   );
 };

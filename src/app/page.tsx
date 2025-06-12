@@ -1,15 +1,13 @@
 "use client";
-import Header from "./components/header";
-import Footer from "./components/footer";
 import Carrousel from "./components/carrousel";
 import Calender from "./components/calender";
 import Newscontainer from "./components/noticiasContainer";
 import Ranking from "./components/ranking";
+import Categories from "./components/categories";
 
 const home = () => {
   return (
     <main className="relative flex flex-col">
-      <Header />
       <div className="content h-fit mb-16 lg:pt-2">
         <Carrousel />
         <div className="calenderContainer relative block mt-3 mb-15">
@@ -48,6 +46,12 @@ const home = () => {
             </svg>
           </div>
         </div>
+        <div className="categoriasContainer relative block mt-3 mb-15">
+          <span className="relative block pl-4 pr-4 md:pl-12 md:pr-12 lg:pl-18 lg:pr-18 text-[16px] lg:text-[24px] font-bold">
+            Categorias
+          </span>
+          <Categories />
+        </div>
         <div className="rankingContainer relative block mt-3 mb-15">
           <span className="relative block pl-4 pr-4 md:pl-12 md:pr-12 lg:pl-18 lg:pr-18 text-[16px] lg:text-[24px] font-bold">
             Rankings
@@ -67,7 +71,6 @@ const home = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </main>
   );
 };
