@@ -1,5 +1,12 @@
 "use client";
 import Image from "next/image";
+import {
+  ReactElement,
+  JSXElementConstructor,
+  ReactNode,
+  ReactPortal,
+  Key,
+} from "react";
 
 export default function Ranking() {
   const rankings = [
@@ -193,23 +200,164 @@ export default function Ranking() {
                   </tr>
                 </thead>
                 <tbody>
-                  {categoriaData.equipos.map((equipo, index) => (
-                    <tr key={index} className="font-bold">
-                      <td className="w-[10%] pt-6 text-center">
-                        {equipo.posicion}
-                      </td>
-                      <td className="w-[60%] pt-6 pl-10">{equipo.nombre}</td>
-                      <td className="w-[10%] pt-6 text-center">
-                        {equipo.victorias}
-                      </td>
-                      <td className="w-[10%] pt-6 text-center">
-                        {equipo.derrotas}
-                      </td>
-                      <td className="w-[10%] pt-6 text-center">
-                        {equipo.puntos}
-                      </td>
-                    </tr>
-                  ))}
+                  {categoriaData.equipos.map(
+                    (
+                      equipo: {
+                        posicion:
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | ReactElement<
+                              unknown,
+                              string | JSXElementConstructor<any>
+                            >
+                          | Iterable<ReactNode>
+                          | ReactPortal
+                          | Promise<
+                              | string
+                              | number
+                              | bigint
+                              | boolean
+                              | ReactPortal
+                              | ReactElement<
+                                  unknown,
+                                  string | JSXElementConstructor<any>
+                                >
+                              | Iterable<ReactNode>
+                              | null
+                              | undefined
+                            >
+                          | null
+                          | undefined;
+                        nombre:
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | ReactElement<
+                              unknown,
+                              string | JSXElementConstructor<any>
+                            >
+                          | Iterable<ReactNode>
+                          | ReactPortal
+                          | Promise<
+                              | string
+                              | number
+                              | bigint
+                              | boolean
+                              | ReactPortal
+                              | ReactElement<
+                                  unknown,
+                                  string | JSXElementConstructor<any>
+                                >
+                              | Iterable<ReactNode>
+                              | null
+                              | undefined
+                            >
+                          | null
+                          | undefined;
+                        victorias:
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | ReactElement<
+                              unknown,
+                              string | JSXElementConstructor<any>
+                            >
+                          | Iterable<ReactNode>
+                          | ReactPortal
+                          | Promise<
+                              | string
+                              | number
+                              | bigint
+                              | boolean
+                              | ReactPortal
+                              | ReactElement<
+                                  unknown,
+                                  string | JSXElementConstructor<any>
+                                >
+                              | Iterable<ReactNode>
+                              | null
+                              | undefined
+                            >
+                          | null
+                          | undefined;
+                        derrotas:
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | ReactElement<
+                              unknown,
+                              string | JSXElementConstructor<any>
+                            >
+                          | Iterable<ReactNode>
+                          | ReactPortal
+                          | Promise<
+                              | string
+                              | number
+                              | bigint
+                              | boolean
+                              | ReactPortal
+                              | ReactElement<
+                                  unknown,
+                                  string | JSXElementConstructor<any>
+                                >
+                              | Iterable<ReactNode>
+                              | null
+                              | undefined
+                            >
+                          | null
+                          | undefined;
+                        puntos:
+                          | string
+                          | number
+                          | bigint
+                          | boolean
+                          | ReactElement<
+                              unknown,
+                              string | JSXElementConstructor<any>
+                            >
+                          | Iterable<ReactNode>
+                          | ReactPortal
+                          | Promise<
+                              | string
+                              | number
+                              | bigint
+                              | boolean
+                              | ReactPortal
+                              | ReactElement<
+                                  unknown,
+                                  string | JSXElementConstructor<any>
+                                >
+                              | Iterable<ReactNode>
+                              | null
+                              | undefined
+                            >
+                          | null
+                          | undefined;
+                      },
+                      index: Key | null | undefined
+                    ) => (
+                      <tr key={index} className="font-bold">
+                        <td className="w-[10%] pt-6 text-center">
+                          {equipo.posicion}
+                        </td>
+                        <td className="w-[60%] pt-6 pl-10">{equipo.nombre}</td>
+                        <td className="w-[10%] pt-6 text-center">
+                          {equipo.victorias}
+                        </td>
+                        <td className="w-[10%] pt-6 text-center">
+                          {equipo.derrotas}
+                        </td>
+                        <td className="w-[10%] pt-6 text-center">
+                          {equipo.puntos}
+                        </td>
+                      </tr>
+                    )
+                  )}
                 </tbody>
               </table>
             </div>
