@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Ranking = () => {
   return (
-    <div className="relative inline-flex flex-wrap BGCcomponent justify-center w-full mt-3 overflow-hidden">
+    <div className="relative inline-flex flex-wrap BGCcomponent justify-center w-full mt-3 overflow-hidden z-90">
       <Image
         src="\volleyball-ball-svgrepo-com-white.png"
         width={0}
